@@ -1,4 +1,3 @@
-
 trait Developer {
   def develop()
 }
@@ -19,9 +18,6 @@ class FrontEndDeveloper extends Developer {
 }
 
 class Project(developers: List[Developer]) {
-  private val backEndDeveloper: BackEndDeveloper = new BackEndDeveloper()
-  private val frontEndDeveloper: FrontEndDeveloper  = new FrontEndDeveloper()
-
   def implement() {
     developers.foreach(_.develop())
   }

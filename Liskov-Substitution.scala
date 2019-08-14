@@ -1,4 +1,4 @@
-trait Post {
+class Post {
   def createPost(db: Database, postMessage: String) {
     db.add(postMessage)
   }
